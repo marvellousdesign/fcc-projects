@@ -13,72 +13,34 @@ html,body {
 }
 a, a:hover, a:visited:hover, a:visited {
 	text-decoration: none;
-/*	color:#999;*/
 }
 a:hover, a:visited:hover {
 	transition: .3s;
-/*	color:#fc3;*/
 }
 img {
 	border: none;
-}
-.no-gutter {
-	margin-left: -15px!important;
-	margin-right: -15px!important;
-}
-
-/* -------------- Nav ----------------------------------------------- */
-.nav-brand, .nav-link {
-	float: none;
-}
-.nav-brand {
-	font-weight: 600;
-	font-size: 1.2rem;
-}
-.navbrand {
-	max-width: 75%;
-}
-.navbar-nav {
-	margin-bottom: 0;
-	white-space: nowrap;
-	list-style-type: none;
-}
-@media all and (min-width: 576px) {
-	.navbar-nav {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	}
-	.navbar-item {
-		padding-left: 2rem;
-	}
 }
 /* -------------- General ----------------------------------------------- */
 .jumbotron {
 	margin-bottom: 0;
 	padding: 9rem 0;
 }
-
-.about p {
-	max-width: 95%;
-}
 @media screen and (min-width: 90em) {
 	.about p {
 		max-width: 80%;
 	}
 }
-
 .design {
 	margin-bottom: 5rem;
-}
-.design [class*="-12"] {
-	padding-left:0;
-	padding-right:0;
 }
 .card .img-fluid {
 	width: 100%;
 }
-
+@media screen and (min-width: 0em) and (max-width: 33.99em){
+	.card {
+		margin-bottom: 1em;
+	}
+}
 @media screen and (min-width: 34em) and (max-width: 39.99em) {
 	.card-columns {
 		-webkit-column-count: 1;
@@ -89,7 +51,6 @@ img {
 		width: 85%;
 	}
 }
-
 @media screen and (min-width: 40em) and (max-width: 61.99em) {
 	.card-columns {
 		-webkit-column-count: 2;
@@ -100,7 +61,6 @@ img {
 		width: 75%;
 	}
 }
-
 @media screen and (min-width: 62em) and (max-width: 74.99em) {
 	.card-columns {
 		-webkit-column-count: 3;
@@ -111,18 +71,16 @@ img {
 		width: 65%;
 	}
 }
-
 @media screen and (min-width: 75em) {
 	.card-columns {
-		-webkit-column-count: 4;
-		-moz-column-count: 4;
-		column-count: 4;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
 	}
 	.contacts {
 		width: 50%;
 	}
 }
-
 .input-group-addon {
 	padding: .5rem 0.5rem;
 	width: 5rem;
@@ -131,35 +89,24 @@ img {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin: 2rem 0 8rem;
+	padding: 2rem 0 8rem;
 }
 .social .btn {
 	margin: .2em;
 }
-
-footer div {
-	display: flex;
-	align-items: center;
-}
-footer p {
-	margin-bottom: 0;
-}
-footer .btn a {
-	font-size: .8em;
-	margin-top: .5em;
-}
-
 /* -------------- Style ----------------------------------------------- */
 .container, .container-fluid {
 	background-color: #fff;
 }
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+.navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
 	color: rgba(255,204,51,1);
 }
-.navbar-dark .navbar-nav .nav-link {
+.navbar-inverse .navbar-nav .nav-link {
 	color: rgba(255,204,51,.75);
 }
-
+.navbar-inverse .navbar-toggler {
+	border-color: rgba(255,204,51,.3);
+}
 header {
 	background: url(../img/lakebg960x260.jpg) no-repeat;
 	background-size: cover;
@@ -173,7 +120,6 @@ h2 {
 	font-weight: 600;
 	color: #fff;
 }
-
 .aboutBG {
 	font-weight: 700;
 	font-size: 60em;
@@ -188,9 +134,11 @@ h2 {
 	-ms-user-select: none;
 	user-select: none;
 }
-
-.about, .about .container {
+.about {
 	background: rgba(255,204,51,1);
+}
+.about .container {
+	background: transparent;
 }
 .form-control:focus, .btn-outline-warning:hover {
 	border-color: #fc3;
@@ -205,8 +153,4 @@ h2 {
 white-space: nowrap;
 vertical-align: middle;
 padding: .5rem 1rem;
-}
-
-footer {
-	background: #ddd;
 }
